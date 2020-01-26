@@ -13,9 +13,10 @@ if installed by typing 'gdalinfo --version'
 5) To reactivate environment: 'activate TEST_GDAL'
 
 To convert .img to .tif:
-1) Check working directory: 'pwd'
-2) Change working directory to path containing .img files, e.g., 'cd ~/Dropbox/DataScienceStuff/Data/RasterShapefiles/NLCD'
-3) Call .img files to convert to .tif: 'gdal_translate -of GTiff NLCD_2008_Land_Cover_L48_20190424.img NLCD_2008.tif'
+1) Activate gdal environment: 'activate TEST_GDAL'
+2) Check working directory: 'pwd'
+3) Change working directory to path containing .img files, e.g., 'cd ~/Dropbox/DataScienceStuff/Data/RasterShapefiles/NLCD'
+4) Call .img files to convert to .tif: 'gdal_translate -of GTiff NLCD_2008_Land_Cover_L48_20190424.img NLCD_2008.tif'
 
 To access gdal within Jupyter Notebook
 1) 'activate TEST_GDAL'
