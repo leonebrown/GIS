@@ -5,7 +5,7 @@ First, need to be able to access gdal:
 'conda create -n TEST_GDAL python=3.7'
 OR?? (I think I used the code below)
 'conda create --yes -n TEST_GDAL python=3.7 gdal'
-2) Activate by typing: 'activate TEST_GDAL'
+2) Activate by typing: 'activate TEST_GDAL' (or 'conda activate TEST_GDAL' -- check if both work)
 3) Install gdal: conda install gdal -c conda-forge
 (I'm not sure if this step is necessary if it was already installed before the new environment was set, but can check
 if installed by typing 'gdalinfo --version'
