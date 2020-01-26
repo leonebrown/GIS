@@ -1,0 +1,26 @@
+To convert ERDAS .img files to .tif to read in Jupyter notebook
+
+First, need to be able to access gdal:
+1) install gdal in a new environment. In the terminal, type:
+'conda create -n TEST_GDAL python=3.7'
+OR?? (I think I used the code below)
+'conda create --yes -n TEST_GDAL python=3.7 gdal'
+2) Activate by typing: 'activate TEST_GDAL'
+3) Install gdal: conda install gdal -c conda-forge
+(I'm not sure if this step is necessary if it was already installed before the new environment was set, but can check
+if installed by typing 'gdalinfo --version'
+4) To eactivate environment: 'deactivate'
+5) To reactivate environment: 'activate TEST_GDAL'
+
+To convert .img to .tif:
+1) Check working directory: 'pwd'
+2) Change working directory to path containing .img files, e.g., 'cd ~/Dropbox/DataScienceStuff/Data/RasterShapefiles/NLCD'
+3) Call .img files to convert to .tif: 'gdal_translate -of GTiff NLCD_2008_Land_Cover_L48_20190424.img NLCD_2008.tif'
+
+To access gdal within Jupyter Notebook
+1) 'activate TEST_GDAL'
+2) Install jupyter: 'pip install jupyterlab'
+3) Also must (re-)install any other packages you wish to use within Jupyter Notebook within this environment
+4) 'jupyter notebook'
+
+
